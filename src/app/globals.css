@@ -1,0 +1,177 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-image: url("https://images.unsplash.com/photo-1450849608880-6f787542c88a?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  max-width: none;
+}
+
+h6 {
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+.navbarlinks {
+  font-family: Play; 
+  font-weight: 700;
+}
+
+footer{
+  font-family: Play; 
+  font-weight: 400;
+  background-color: black;
+  color: white;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  align-items: center;
+}
+
+#container {
+  max-width: 1000px;   
+  margin: 0 auto;     
+  padding: 20px;     
+  text-align: center;
+}
+
+#title {
+  font-size: 2.5rem;  
+  color: white;        
+  margin-bottom: 15px; 
+}
+
+#description {
+  font-size: 1.2rem;  
+  color: white;        
+  line-height: 1.6;   
+  margin-bottom: 20px; 
+  font-family: Play; 
+  font-weight: 100;
+}
+
+#button{
+  display: flex;
+  width: 350px;
+  height: 50px;
+  
+}
+
+#button-travel{
+  width: 350px;
+  height: 50px;
+}
+
+#link-button{
+  display: flex;
+  width: 350px;
+  height: 50px;
+}
+
+#boton {
+  width: 350px;
+  height: 50px;
+}
+
+#image {
+  max-width: 100%;    
+  height: auto;       
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; 
+  padding: 0 40px;
+  background-color: black;
+  height: 60px;
+}
+
+.nav-link {
+  font-family: Play;
+  font-weight: 700;
+}
+
+.navbar a {
+  color: white;
+  font-size: 1.5rem;
+  letter-spacing: 2px; 
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px; 
+  height: 100%;
+
+  justify-content: center;
+  align-items: center;
+  font-family: Play; 
+  font-weight: 700;
+}
+
+.nav-links a {
+  color: white;
+  font-size: 1rem;
+  text-decoration: none; 
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease; 
+  cursor: pointer;
+}
+
+.nav-links a:hover {
+  background-color: white;
+  color: black;
+}
+
+#potd {
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(3px); 
+  -webkit-backdrop-filter: blur(10px); 
+}
+
+#intro {
+ height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 10px;
+  flex: 1;
+  gap: 25px;
+  color: #ffffff;
+}
+
+#homepage {
+  background-color: rgba(0, 0, 0, 0.27);
+  height: 100vh;
+  display: flex;
+  width: 100%;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 100px;
+}
+
+#info{
+  font-size: 48px; 
+}
