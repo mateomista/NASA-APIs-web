@@ -1,3 +1,4 @@
+
 export default async function HomePage() {
     const nasaAPIKey = 'd5Kbh7xgEs3NULQTBiQ3jGsHDBkrrpfr88CIJWNO';
     const root = `https://api.nasa.gov/planetary/apod?api_key=${nasaAPIKey}`;
