@@ -4,6 +4,7 @@ import {Button} from "@nextui-org/react";
 export default function Home() {
   return (
     <><title>Home</title>
+    <main>
         <div id="homepage">
           <div id="intro">
             <div>Explore the Space</div>
@@ -14,6 +15,8 @@ export default function Home() {
             </div>
           </div>
         </div>
+    </main>
+        
     </>
   );
 }
