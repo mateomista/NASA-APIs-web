@@ -20,7 +20,7 @@ export const play = Play({
         <Spacer flex={1} />
         <div className="nav-links">
           <a href="/potd" className={`${play.className} antialased`}>Picture Of The Day</a>
-          <a href="/mars-rovers" className={`${play.className} antialased`}>Mars Rovers</a>
+          <a href="/rovers" className={`${play.className} antialased`}>Mars Rovers</a>
           <a className='caja-icono' href="https://www.instagram.com/mateomista5/"><Instagram color="white"/></a>
           <a className='caja-icono' href="https://www.linkedin.com/in/mateo-mista"><Linkedin color="white"/></a>
           <a className='caja-icono' href="https://github.com/mateomista"><Github color="white"/></a>

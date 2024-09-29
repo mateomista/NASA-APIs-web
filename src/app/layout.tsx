@@ -24,11 +24,11 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${play.className} antialased`} style={{ padding: '0px 0px', fontWeight: '700' }}>
         <header><Navbar /></header>
-          <main>
+         
          
               {children}
             
-          </main>  
+          
         <footer>© 2024 Company, Inc. All rights reserved.</footer>
       </body> 
     </html>
