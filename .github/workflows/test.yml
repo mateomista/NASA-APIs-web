@@ -26,8 +26,11 @@ jobs:
 
       # Ejecuta el linter
       - name: Linter
-        working-directory: ./
-        run: npm run lint
+        run: |
+          echo "PWD: $(pwd)"
+          npm run lint -- .
+        working-directory: ${{ github.workspace }}
+
 
       # Compila la aplicación
       - name: Build for production
