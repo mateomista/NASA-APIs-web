@@ -1,13 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    webpack(config) {
-        config.module.rules.push({
-          test: /\.svg$/,
-          use: [{ loader: "@svgr/webpack", options: { icon: true } }],
-        });
-    
-        return config;
-      },
+  reactStrictMode: true,
+
+  // 🔧 Corrige el error de "Invalid project directory: /lint"
+  eslint: {
+    dirs: ['.'], // Analiza el directorio actual (raíz del proyecto)
+  },
 };
 
 export default nextConfig;
