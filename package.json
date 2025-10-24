@@ -3,10 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --webpack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "e2e": "start-server-and-test start http://localhost:3000 cypress:run"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.6.0",
@@ -19,9 +22,10 @@
     "framer-motion": "^11.9.0",
     "lucide-react": "^0.446.0",
     "mdb-react-ui-kit": "^9.0.0",
-    "next": "14.2.13",
+    "next": "^16.0.0",
     "react": "^18",
     "react-dom": "^18",
+    "start-server-and-test": "^2.1.2",
     "tailwind-merge": "^2.5.2",
     "tailwindcss-animate": "^1.0.7"
   },
@@ -29,6 +33,7 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "cypress": "^15.5.0",
     "eslint": "^8",
     "eslint-config-next": "14.2.13",
     "postcss": "^8",
