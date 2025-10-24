@@ -23,7 +23,7 @@ jobs:
       - name: Installing dependencies
         run: npm install
 
-      # Ejecuta el linter (análisis de código)
+      # Ejecuta el linter (análisis de código).
       - name: Linter
         run: npm run lint
 
