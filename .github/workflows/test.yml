@@ -4,7 +4,6 @@ on: [push, pull_request]
 
 jobs:
   e2e:
-    #máquina virtual donde se ejecutará
     runs-on: ubuntu-latest
 
     strategy:
@@ -12,25 +11,28 @@ jobs:
         node-version: [18.x]
 
     steps:
-      # Clona repositorio en la máquina virtual
+      # Clona el repositorio
       - uses: actions/checkout@v3
 
-      # Configura la versión de Node.js especificada en la matriz
+      # Configura la versión de Node.js
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
 
-      # Instala las dependencias del proyecto
+      # Instala dependencias
       - name: Installing dependencies
-        run: npm install
+        run: npm ci
 
-      # Ejecuta el linter (análisis de código).
+      # Ejecuta el linter
       - name: Linter
+        working-directory: ./
         run: npm run lint
 
-      # Compila la aplicación para producción
+      # Compila la aplicación
       - name: Build for production
         run: npm run build
 
-      # Ejecuta las pruebas E2E (Cypress)
+      # Ejecuta las pruebas E2E con Cypress
       - name: Running Cypress
         run: npm run e2e
