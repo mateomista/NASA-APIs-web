@@ -9,33 +9,21 @@ jobs:
     strategy:
       matrix:
         node-version: [20.x]
-
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
     steps:
-      # Clona el repositorio
       - uses: actions/checkout@v3
 
-      # Configura la versión de Node.js
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
 
-      # Instala dependencias
-      - name: Installing dependencies
-        run: npm ci
+      - name: Installing depedencies
+        run: npm install
 
-      # Ejecuta el linter
       - name: Linter
-        run: |
-          echo "PWD: $(pwd)"
-          npm run lint -- .
-        working-directory: ${{ github.workspace }}
+        run: npm run lint
 
-
-      # Compila la aplicación
       - name: Build for production
         run: npm run build
 
-      # Ejecuta las pruebas E2E con Cypress
       - name: Running Cypress
         run: npm run e2e
