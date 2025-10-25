@@ -1,10 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-
-  // 🔧 Corrige el error de "Invalid project directory: /lint"
   eslint: {
-    dirs: ['.'], // Analiza el directorio actual (raíz del proyecto)
+    // Especifica los directorios correctos dentro de src
+    dirs: ['src/app', 'src/components', 'src/lib'],
   },
 };
 
