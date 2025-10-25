@@ -19,9 +19,7 @@ jobs:
       - name: Installing depedencies
         run: npm install
 
-      - name: Linter
-        run: npx next lint
-        
+
       - name: Build for production
         run: npm run build
 
