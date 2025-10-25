@@ -20,8 +20,8 @@ jobs:
         run: npm install
 
       - name: Linter
-        run: echo "PROBANDO EL LINTER. SI VES ESTO, EL ARCHIVO SE ACTUALIZÓ."
-
+        run: npx next lint
+        
       - name: Build for production
         run: npm run build
 

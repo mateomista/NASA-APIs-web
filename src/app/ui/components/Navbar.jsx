@@ -1,10 +1,10 @@
 
 import { Play } from 'next/font/google';
 import { Spacer } from '@nextui-org/react';
-import Instagram from '@/app/ui/svgs/instagram.svg'
-import Github from '@/app/ui/svgs/gitsvg.svg'
-import Linkedin from '@/app/ui/svgs/linkedin.svg'
-import Gmail from '@/app/ui/svgs/gmail.svg'
+import Instagram from '@/app/ui/svgs/instagram.svg?components'
+import Github from '@/app/ui/svgs/gitsvg.svg?components'
+import Linkedin from '@/app/ui/svgs/linkedin.svg?components'
+import Gmail from '@/app/ui/svgs/gmail.svg?components'
 
 
 export const play = Play({
