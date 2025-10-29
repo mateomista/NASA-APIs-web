@@ -25,3 +25,5 @@ jobs:
 
       - name: Running Cypress
         run: npm run e2e
+        env:
+          CYPRESS_NASA_API_KEY: ${{ secrets.NASA_API_KEY }}
