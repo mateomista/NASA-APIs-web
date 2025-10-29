@@ -10,7 +10,8 @@
     "lint:fix": "next lint --fix",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
-    "e2e": "start-server-and-test start http://localhost:3000 cypress:run"
+    "e2e": "start-server-and-test start http://localhost:3000 cypress:run",
+    "e2e:local": "start-server-and-test dev http://localhost:3000 cypress:open"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.6.0",
@@ -35,6 +36,7 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "cypress": "^15.5.0",
+    "dotenv": "^17.2.3",
     "eslint": "^8",
     "eslint-config-next": "14.2.13",
     "postcss": "^8",
